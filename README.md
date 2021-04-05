@@ -48,9 +48,9 @@ network={
 - 待树莓派启动后(红灯常亮, 绿灯偶闪), 从网络管理界面(如tplogin.cn), 或使用`arp`等命令, 找到树莓派的IP地址(eg, 192.168.0.99)
 - 用SSH连接树莓派: ssh pi@192.168.0.99 (登录密码为raspberry)
 - 在树莓派上运行`sudo raspi-config`, 
-  + 通过`interface Options` -> `VNC`, 启动VNC
-  + 可以修改掉`pi`用户的密码
-  + 通过`Advanced Options` -> `Resolution`, 调节分辨率(*系统将重启*)
+  + 通过`Interface Options` -> `VNC`, 启动VNC
+  + 可以通过`System Options` -> `Password`, 修改掉`pi`用户的密码
+  + 通过`Display Options` -> `Resolution`, 调节分辨率(*系统将重启*)
 
 ## 4 入佳境
 - 重启树莓派后, 使用VNC viewer连接之
@@ -59,6 +59,6 @@ network={
 - 安装MiniConda, 好玩Python
 ```
 wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
-sudo /bin/bash Miniconda3-latest-Linux-armv7l.sh # -> change default directory to /home/pi/miniconda3
+sudo /bin/bash Miniconda3-latest-Linux-armv7l.sh # -> change default dir to /home/pi/miniconda3
 ```
 - 配置`~/.bashrc`, 自动启动fish, 设置fish和nvim的别名等, 并`export PATH="/home/pi/miniconda3/bin:$PATH"`
