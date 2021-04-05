@@ -53,9 +53,9 @@ network={
   + 通过`Display Options` -> `Resolution`, 调节分辨率(*系统将重启*)
 
 ## 4 入佳境
-- 重启树莓派后, 使用VNC viewer连接之
+- 从个人主机下载并运行[real-vnc-viewer](https://www.realvnc.com/en/connect/download/viewer/), 连接重启后树莓派
 - 按照屏幕提示进行配置
-- 安装neovim, fish, awesomeWM, tmux, mpv, gdebi, fortune, git, build-essential, cmake, go, rustc, cargo等常用工具 (不需手动換源)
+- 安装neovim, fish, awesomeWM, tmux, mpv, gdebi, fortune-mod, git, build-essential, cmake, golang, rustc, cargo等常用工具 (不需手动換源)
 - 安装MiniConda, 好玩Python
 ```
 wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
